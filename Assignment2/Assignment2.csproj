@@ -1,0 +1,197 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="assets\**" />
+    <Content Remove="assets\**" />
+    <EmbeddedResource Remove="assets\**" />
+    <None Remove="assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\style.css" />
+    <Content Remove="wwwroot\css\style.css.map" />
+    <Content Remove="wwwroot\images\404\404.png" />
+    <Content Remove="wwwroot\images\about\about.jpg" />
+    <Content Remove="wwwroot\images\account\Account.png" />
+    <Content Remove="wwwroot\images\account\Account1.png" />
+    <Content Remove="wwwroot\images\apps\apple-app-store.png" />
+    <Content Remove="wwwroot\images\apps\google-play-store.png" />
+    <Content Remove="wwwroot\images\blog\post-1.jpg" />
+    <Content Remove="wwwroot\images\blog\post-2.jpg" />
+    <Content Remove="wwwroot\images\blog\post-3.jpg" />
+    <Content Remove="wwwroot\images\blog\post-4.jpg" />
+    <Content Remove="wwwroot\images\blog\post-5.jpg" />
+    <Content Remove="wwwroot\images\blog\video-icon.png" />
+    <Content Remove="wwwroot\images\call-to-action\cta-background.jpg" />
+    <Content Remove="wwwroot\images\call-to-action\google-play-button.png" />
+    <Content Remove="wwwroot\images\call-to-action\mockup.png" />
+    <Content Remove="wwwroot\images\category-slider\amazon.jpg" />
+    <Content Remove="wwwroot\images\category-slider\category-02.jpg" />
+    <Content Remove="wwwroot\images\category-slider\category-03.jpg" />
+    <Content Remove="wwwroot\images\category-slider\category-04.jpg" />
+    <Content Remove="wwwroot\images\category-slider\category-05.jpg" />
+    <Content Remove="wwwroot\images\category-slider\category-06.jpg" />
+    <Content Remove="wwwroot\images\contact-us\contact-us.png" />
+    <Content Remove="wwwroot\images\favicon.png" />
+    <Content Remove="wwwroot\images\footer\phone-icon.png" />
+    <Content Remove="wwwroot\images\home\hero.jpg" />
+    <Content Remove="wwwroot\images\home\hero.png" />
+    <Content Remove="wwwroot\images\logo-footer.png" />
+    <Content Remove="wwwroot\images\logo.png" />
+    <Content Remove="wwwroot\images\nav-toogle-icon.png" />
+    <Content Remove="wwwroot\images\products\products-1.jpg" />
+    <Content Remove="wwwroot\images\products\products-2.jpg" />
+    <Content Remove="wwwroot\images\products\products-3.jpg" />
+    <Content Remove="wwwroot\images\products\products-4.jpg" />
+    <Content Remove="wwwroot\images\subscription\subscription-back.jpg" />
+    <Content Remove="wwwroot\images\team\team1.jpg" />
+    <Content Remove="wwwroot\images\team\team2.jpg" />
+    <Content Remove="wwwroot\images\team\team3.jpg" />
+    <Content Remove="wwwroot\images\team\team4.jpg" />
+    <Content Remove="wwwroot\images\user\user-thumb.jpg" />
+    <Content Remove="wwwroot\images\widget\store-01.png" />
+    <Content Remove="wwwroot\js\script.js" />
+    <Content Remove="wwwroot\plugins\bootstrap\bootstrap-slider.css" />
+    <Content Remove="wwwroot\plugins\bootstrap\bootstrap-slider.js" />
+    <Content Remove="wwwroot\plugins\bootstrap\bootstrap.min.css" />
+    <Content Remove="wwwroot\plugins\bootstrap\bootstrap.min.js" />
+    <Content Remove="wwwroot\plugins\bootstrap\popper.min.js" />
+    <Content Remove="wwwroot\plugins\font-awesome\css\font-awesome.css" />
+    <Content Remove="wwwroot\plugins\font-awesome\css\font-awesome.min.css" />
+    <Content Remove="wwwroot\plugins\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Remove="wwwroot\plugins\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Remove="wwwroot\plugins\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Remove="wwwroot\plugins\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Remove="wwwroot\plugins\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Remove="wwwroot\plugins\font-awesome\fonts\FontAwesome.otf" />
+    <Content Remove="wwwroot\plugins\google-map\images\marker.png" />
+    <Content Remove="wwwroot\plugins\google-map\map.js" />
+    <Content Remove="wwwroot\plugins\jquery-nice-select\css\nice-select.css" />
+    <Content Remove="wwwroot\plugins\jquery-nice-select\js\fastclick.js" />
+    <Content Remove="wwwroot\plugins\jquery-nice-select\js\jquery.js" />
+    <Content Remove="wwwroot\plugins\jquery-nice-select\js\jquery.nice-select.js" />
+    <Content Remove="wwwroot\plugins\jquery-nice-select\js\jquery.nice-select.min.js" />
+    <Content Remove="wwwroot\plugins\jquery-nice-select\js\prism.js" />
+    <Content Remove="wwwroot\plugins\jquery\jquery.min.js" />
+    <Content Remove="wwwroot\plugins\raty\jquery.raty-fa.js" />
+    <Content Remove="wwwroot\plugins\slick\ajax-loader.gif" />
+    <Content Remove="wwwroot\plugins\slick\fonts\slick.eot" />
+    <Content Remove="wwwroot\plugins\slick\fonts\slick.svg" />
+    <Content Remove="wwwroot\plugins\slick\fonts\slick.ttf" />
+    <Content Remove="wwwroot\plugins\slick\fonts\slick.woff" />
+    <Content Remove="wwwroot\plugins\slick\README.markdown" />
+    <Content Remove="wwwroot\plugins\slick\slick-theme.css" />
+    <Content Remove="wwwroot\plugins\slick\slick.css" />
+    <Content Remove="wwwroot\plugins\slick\slick.min.js" />
+    <Content Remove="wwwroot\plugins\tether\css\tether-theme-arrows-dark.css" />
+    <Content Remove="wwwroot\plugins\tether\css\tether-theme-arrows-dark.min.css" />
+    <Content Remove="wwwroot\plugins\tether\css\tether-theme-arrows.css" />
+    <Content Remove="wwwroot\plugins\tether\css\tether-theme-arrows.min.css" />
+    <Content Remove="wwwroot\plugins\tether\css\tether-theme-basic.css" />
+    <Content Remove="wwwroot\plugins\tether\css\tether-theme-basic.min.css" />
+    <Content Remove="wwwroot\plugins\tether\css\tether.css" />
+    <Content Remove="wwwroot\plugins\tether\css\tether.min.css" />
+    <Content Remove="wwwroot\plugins\tether\js\tether.js" />
+    <Content Remove="wwwroot\plugins\tether\js\tether.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\style.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\css\style.css.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\css\style.css.map" />
+    <None Include="wwwroot\images\404\404.png" />
+    <None Include="wwwroot\images\about\about.jpg" />
+    <None Include="wwwroot\images\account\Account.png" />
+    <None Include="wwwroot\images\account\Account1.png" />
+    <None Include="wwwroot\images\apps\apple-app-store.png" />
+    <None Include="wwwroot\images\apps\google-play-store.png" />
+    <None Include="wwwroot\images\blog\post-1.jpg" />
+    <None Include="wwwroot\images\blog\post-2.jpg" />
+    <None Include="wwwroot\images\blog\post-3.jpg" />
+    <None Include="wwwroot\images\blog\post-4.jpg" />
+    <None Include="wwwroot\images\blog\post-5.jpg" />
+    <None Include="wwwroot\images\blog\video-icon.png" />
+    <None Include="wwwroot\images\call-to-action\cta-background.jpg" />
+    <None Include="wwwroot\images\call-to-action\google-play-button.png" />
+    <None Include="wwwroot\images\call-to-action\mockup.png" />
+    <None Include="wwwroot\images\category-slider\amazon.jpg" />
+    <None Include="wwwroot\images\category-slider\category-02.jpg" />
+    <None Include="wwwroot\images\category-slider\category-03.jpg" />
+    <None Include="wwwroot\images\category-slider\category-04.jpg" />
+    <None Include="wwwroot\images\category-slider\category-05.jpg" />
+    <None Include="wwwroot\images\category-slider\category-06.jpg" />
+    <None Include="wwwroot\images\contact-us\contact-us.png" />
+    <None Include="wwwroot\images\favicon.png" />
+    <None Include="wwwroot\images\footer\phone-icon.png" />
+    <None Include="wwwroot\images\home\hero.jpg" />
+    <None Include="wwwroot\images\home\hero.png" />
+    <None Include="wwwroot\images\logo-footer.png" />
+    <None Include="wwwroot\images\logo.png" />
+    <None Include="wwwroot\images\nav-toogle-icon.png" />
+    <None Include="wwwroot\images\products\products-1.jpg" />
+    <None Include="wwwroot\images\products\products-2.jpg" />
+    <None Include="wwwroot\images\products\products-3.jpg" />
+    <None Include="wwwroot\images\products\products-4.jpg" />
+    <None Include="wwwroot\images\subscription\subscription-back.jpg" />
+    <None Include="wwwroot\images\team\team1.jpg" />
+    <None Include="wwwroot\images\team\team2.jpg" />
+    <None Include="wwwroot\images\team\team3.jpg" />
+    <None Include="wwwroot\images\team\team4.jpg" />
+    <None Include="wwwroot\images\user\user-thumb.jpg" />
+    <None Include="wwwroot\images\widget\store-01.png" />
+    <None Include="wwwroot\js\script.js" />
+    <None Include="wwwroot\plugins\bootstrap\bootstrap-slider.css" />
+    <None Include="wwwroot\plugins\bootstrap\bootstrap-slider.js" />
+    <None Include="wwwroot\plugins\bootstrap\bootstrap.min.css" />
+    <None Include="wwwroot\plugins\bootstrap\bootstrap.min.js" />
+    <None Include="wwwroot\plugins\bootstrap\popper.min.js" />
+    <None Include="wwwroot\plugins\font-awesome\css\font-awesome.css" />
+    <None Include="wwwroot\plugins\font-awesome\css\font-awesome.min.css" />
+    <None Include="wwwroot\plugins\font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\plugins\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\plugins\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\plugins\font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\plugins\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\plugins\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\plugins\google-map\images\marker.png" />
+    <None Include="wwwroot\plugins\google-map\map.js" />
+    <None Include="wwwroot\plugins\jquery-nice-select\css\nice-select.css" />
+    <None Include="wwwroot\plugins\jquery-nice-select\js\fastclick.js" />
+    <None Include="wwwroot\plugins\jquery-nice-select\js\jquery.js" />
+    <None Include="wwwroot\plugins\jquery-nice-select\js\jquery.nice-select.js" />
+    <None Include="wwwroot\plugins\jquery-nice-select\js\jquery.nice-select.min.js" />
+    <None Include="wwwroot\plugins\jquery-nice-select\js\prism.js" />
+    <None Include="wwwroot\plugins\jquery\jquery.min.js" />
+    <None Include="wwwroot\plugins\raty\jquery.raty-fa.js" />
+    <None Include="wwwroot\plugins\slick\ajax-loader.gif" />
+    <None Include="wwwroot\plugins\slick\fonts\slick.eot" />
+    <None Include="wwwroot\plugins\slick\fonts\slick.svg" />
+    <None Include="wwwroot\plugins\slick\fonts\slick.ttf" />
+    <None Include="wwwroot\plugins\slick\fonts\slick.woff" />
+    <None Include="wwwroot\plugins\slick\README.markdown" />
+    <None Include="wwwroot\plugins\slick\slick-theme.css" />
+    <None Include="wwwroot\plugins\slick\slick.css" />
+    <None Include="wwwroot\plugins\slick\slick.min.js" />
+    <None Include="wwwroot\plugins\tether\css\tether-theme-arrows-dark.css" />
+    <None Include="wwwroot\plugins\tether\css\tether-theme-arrows-dark.min.css" />
+    <None Include="wwwroot\plugins\tether\css\tether-theme-arrows.css" />
+    <None Include="wwwroot\plugins\tether\css\tether-theme-arrows.min.css" />
+    <None Include="wwwroot\plugins\tether\css\tether-theme-basic.css" />
+    <None Include="wwwroot\plugins\tether\css\tether-theme-basic.min.css" />
+    <None Include="wwwroot\plugins\tether\css\tether.css" />
+    <None Include="wwwroot\plugins\tether\css\tether.min.css" />
+    <None Include="wwwroot\plugins\tether\js\tether.js" />
+    <None Include="wwwroot\plugins\tether\js\tether.min.js" />
+  </ItemGroup>
+
+</Project>
